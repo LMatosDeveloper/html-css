@@ -15,7 +15,7 @@
 --fonte3: 'Sriracha', cursive;
 }
 
-body {
+html, body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte1);
@@ -53,8 +53,9 @@ header a:hover, footer a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 3.5vw;
     padding-left: 30px;
+    font-family: var(--fonte3);
 }
 
 section.normal {
@@ -69,7 +70,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.322);
-    width: 300px;
+    display: inline-block;
+    padding: 7px;
 }
 footer {
     background-color: black;
