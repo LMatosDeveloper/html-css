@@ -53,14 +53,15 @@ header a:hover, footer a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 3.2vw;
+    line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal {
     background-color: white;
-    color: black;
+    color: rgba(0, 0, 0, 0.89);
 }
 
 section > p {
