@@ -3,9 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: url('imagens/wallpaper005.jpg');
+            background-attachment: fixed;
+            background-size: 100%;
+            background-position: center top;
+            background-repeat: no-repeat;
+            
+        }
+
+        body > h1 {
+            text-align: center;
+            margin-bottom: 10%;
+        }
+        
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+        caption {
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: rgba(128, 128, 128, 0.685);
+        }
+
+        td, th {
+            border: 1px solid black;
+        }
+
+        td.num {
+            text-align: right;
+        }
+        thead, tfoot {
+            background-color: rgb(14, 13, 13);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(14, 13, 13);
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n 1 */
+            background-color: rgb(245, 245, 245);
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: burlywood;
+        }
+    </style>
 </head>
 <body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE 
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH 
+    -->
+
+    <table>
+
+        <caption>População da Unidades Federatívas</caption>
+        
+        <thead>
+            <tr>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">44 420 459</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais </td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="num">14 136 417</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td class="num">11 443 208</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 880 506</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pernambuco</td>
+                <td class="num">9 058 155</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Ceará</td>
+                <td class="num">8 791 688</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Pará</td>
+                <td class="num">8 116 132</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7 609 601</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Goiás</td>
+                <td class="num">7 055 228</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Maranhão</td>
+                <td class="num">6 775 152</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Paraíba</td>
+                <td class="num">3 974 495</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Amazonas</td>
+                <td class="num">3 941 175</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Espírito Santo</td>
+                <td class="num">3 833 486	</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Mato Grosso</td>
+                <td class="num">3 658 813</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 302 406</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Piauí</td>
+                <td class="num">3 269 200</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Alagoas</td>
+                <td class="num">3 127 511</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Distrito Federal</td>
+                <td class="num">2 817 068</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 756 700</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Sergipe</td>
+                <td class="num">2 209 558</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Rondônia</td>
+                <td class="num">1 581 016</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Tocantins</td>
+                <td class="num">1 511 459</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Acre</td>
+                <td class="num">830 026</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Amapá</td>
+                <td class="num">733 508</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Roraima</td>
+                <td class="num">636 303</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <td></td>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>210.147.125</strong></td>
+            
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione corporis accusantium suscipit, excepturi provident voluptatum recusandae possimus repellat fuga placeat eum voluptatibus assumenda eaque? Non libero praesentium maxime nulla.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae obcaecati? Molestias nobis, rem est vitae, voluptate ipsum culpa quia eos tempora quas ipsa officia ab in, soluta dolores facere.</p>
     
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione corporis accusantium suscipit, excepturi provident voluptatum recusandae possimus repellat fuga placeat eum voluptatibus assumenda eaque? Non libero praesentium maxime nulla.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae obcaecati? Molestias nobis, rem est vitae, voluptate ipsum culpa quia eos tempora quas ipsa officia ab in, soluta dolores facere.</p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione corporis accusantium suscipit, excepturi provident voluptatum recusandae possimus repellat fuga placeat eum voluptatibus assumenda eaque? Non libero praesentium maxime nulla.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae obcaecati? Molestias nobis, rem est vitae, voluptate ipsum culpa quia eos tempora quas ipsa officia ab in, soluta dolores facere.</p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione corporis accusantium suscipit, excepturi provident voluptatum recusandae possimus repellat fuga placeat eum voluptatibus assumenda eaque? Non libero praesentium maxime nulla.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae obcaecati? Molestias nobis, rem est vitae, voluptate ipsum culpa quia eos tempora quas ipsa officia ab in, soluta dolores facere.</p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione corporis accusantium suscipit, excepturi provident voluptatum recusandae possimus repellat fuga placeat eum voluptatibus assumenda eaque? Non libero praesentium maxime nulla.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae obcaecati? Molestias nobis, rem est vitae, voluptate ipsum culpa quia eos tempora quas ipsa officia ab in, soluta dolores facere.</p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ratione corporis accusantium suscipit, excepturi provident voluptatum recusandae possimus repellat fuga placeat eum voluptatibus assumenda eaque? Non libero praesentium maxime nulla.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, repudiandae obcaecati? Molestias nobis, rem est vitae, voluptate ipsum culpa quia eos tempora quas ipsa officia ab in, soluta dolores facere.</p>
+
 </body>
 </html>
