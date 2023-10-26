@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            background-color: gray;
+            padding: 10px;
+            color: aliceblue;
+            font-weight: bolder;
+        }
+
+        .cnome {
+            background-color: aqua;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Apicultor</td>
+            </tr>
+            <tr>
+                <td>Galdi</td>
+                <td>M</td>
+                <td>67</td>
+                <td>Gerente</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>M</td>
+                <td>25</td>
+                <td>ADM</td>
+            </tr>
+            <tr>
+                <td>Nilvia</td>
+                <td>F</td>
+                <td>48</td>
+                <td>Advogada</td>
+            </tr>
+            <tr>
+                <td>Raquel</td>
+                <td>F</td>
+                <td>31</td>
+                <td>Corretora</td>
+            </tr>
+        
+    </table>
+</body>
+</html>
