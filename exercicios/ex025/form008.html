@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+ 
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <div>
+            <label for="n1">Número 1: </label>
+            <input type="number" name="n1" id="n1" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </div>
+
+        <div>
+            <label for="n1">Número 2: </label>
+            <input type="number" name="n2" id="n2" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </div>
+
+        <div>
+            <label for="soma">Soma: </label>
+            <output name="soma" id="soma">0</output>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
