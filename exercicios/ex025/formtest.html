@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com estilo</title>
+    <style>
+        @font-face {
+        font-family: 'Ghosteen';
+        src: url('fonts/Ghosteen.otf') format('opentype');
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background: url('imagens/halloween.jpg') center center no-repeat fixed;
+            background-size: cover;
+            
+        }
+
+        div.campo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+            width: 310px;
+            height: 140px;
+            padding: 20px;
+            background-color: #5e461aa6;
+            text-align: center;
+            font-size: 1.2em;
+            border-radius: 10px;
+                      
+        }
+
+        label {
+            font-size: 1.5em;
+            font-weight: bolder;
+            margin: 15px;
+            color: #fcf9f9;
+            font-family: 'Ghosteen';
+        }
+
+        input#user {
+           width: 300px;
+           height: 35px;
+           border-radius: 10px;
+           font-size: 1em;
+           text-align: center;
+
+        }
+        input#senha {
+           width: 300px;
+           height: 35px;
+           border-radius: 10px;
+           font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div class="campo">
+            <label for="user">Nome de Usuário:</label>
+            <input type="text" name="user" id="user" autocomplete="username">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+
+        </div>
+    </form>
+</body>
+</html>
